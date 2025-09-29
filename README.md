@@ -54,6 +54,11 @@ A microcontroller-based stylophone with recording and playback capabilities, bui
 ![Manufacture Top](https://github.com/Gamufal/DigitalStyphone/blob/main/manufacture-top-layer.png?raw=true)
 ![Manufacture Bottom](https://github.com/Gamufal/DigitalStyphone/blob/main/manufacture-bottom-layer.png?raw=true)
 
+### 3D Housing Model
+
+![Housing](https://github.com/Gamufal/DigitalStyphone/blob/main/housing-preview.png?raw=true)
+A 3D-printed enclosure can also be made for the device. A model of the enclosure has been prepared for this purpose, and it is available as the `housing.stl` file.
+
 ## Software
 
 ### How it Works
