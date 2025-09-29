@@ -27,8 +27,10 @@ A microcontroller-based stylophone with recording and playback capabilities, bui
 |---|---|
 | Raspberry Pi Pico | 1 |
 | 5mm LED | 2 |
+| 10Ω Resistor (1/4W) | 1 |
 | 1kΩ Resistor (1/4W) | 21 |
 | 10kΩ Resistor (1/4W) | 1 |
+| 10uF Capacitor | 1 |
 | 0.96" OLED Display | 1 |
 | LM2596 Step-down Converter | 1 |
 | 6x6mm Tactile Switch | 5 |
