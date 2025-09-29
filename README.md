@@ -43,9 +43,16 @@ A microcontroller-based stylophone with recording and playback capabilities, bui
 
 ![Schematic](https://github.com/Gamufal/DigitalStyphone/blob/main/schematic.png?raw=true)
 
-### PCB Layout
+### PCB Design
 
 ![PCB Layout](https://github.com/Gamufal/DigitalStyphone/blob/main/PCB-layout.png?raw=true)
+![PCB_Top](https://github.com/Gamufal/DigitalStyphone/blob/main/PCB-top-layer.png?raw=true)
+![PCB_Bottom](https://github.com/Gamufal/DigitalStyphone/blob/main/PCB-bottom-layer.png?raw=true)
+
+### Manufacture Preview
+
+![Manufacture Top](https://github.com/Gamufal/DigitalStyphone/blob/main/manufacture-top-layer.png?raw=true)
+![Manufacture Bottom](https://github.com/Gamufal/DigitalStyphone/blob/main/manufacture-bottom-layer.png?raw=true)
 
 ## Software
 
