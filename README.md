@@ -1,10 +1,10 @@
-# Playback Stylophone
+# Digital Stylophone
 
 A microcontroller-based stylophone with recording and playback capabilities, built around the Raspberry Pi Pico. This project reimagines the classic analog instrument with modern digital features, including an OLED display and non-volatile memory for storing recorded tracks.
 
 ## Demo
 
-![Playback Stylophone](https://github.com/Gamufal/PlaybackStylophone/blob/main/Documentation/photo.jpg?raw=true)
+![Digital Stylophone](https://github.com/Gamufal/DigitalStyphone/blob/main/prototype.png?raw=true)
 
 
 ## Features
@@ -39,17 +39,17 @@ A microcontroller-based stylophone with recording and playback capabilities, bui
 
 ### Schematic
 
-![Schematic](https://github.com/Gamufal/PlaybackStylophone/blob/main/PlaybackStylophone_Schematic.png?raw=true)
+![Schematic](https://github.com/Gamufal/DigitalStyphone/blob/main/schematic.png?raw=true)
 
 ### PCB Layout
 
-![PCB Layout](https://github.com/Gamufal/PlaybackStylophone/blob/main/PCB_Layout.png?raw=true)
+![PCB Layout](https://github.com/Gamufal/DigitalStyphone/blob/main/PCB-layout.png?raw=true)
 
 ## Software
 
 ### How it Works
 
-The device is controlled by a MicroPython script (`StylophoneSoftware.py`) running on the Raspberry Pi Pico.
+The device is controlled by a MicroPython script (`main.py`) running on the Raspberry Pi Pico.
 
 *   **Sound Generation:** The stylus's position on the resistive keyboard is read as an analog value by the Pico's ADC (Analog-to-Digital Converter). This value is then mapped to a specific musical note frequency. The sound is generated using PWM (Pulse Width Modulation) sent to a 1W speaker.
 
@@ -65,7 +65,7 @@ The device is controlled by a MicroPython script (`StylophoneSoftware.py`) runni
 
 2.  **Install `ssd1306.py`:** The OLED display requires the `ssd1306.py` library. You can find it [here](https://github.com/micropython/micropython/blob/master/drivers/display/ssd1306.py) and save it to your Pico.
 
-3.  **Upload the Software:** Copy the `StylophoneSoftware.py` file to your Raspberry Pi Pico. The easiest way to do this is by using an IDE like [Thonny](https://thonny.org/), which has a simple interface for managing files on a MicroPython device.
+3.  **Upload the Software:** Copy the `main.py` file to your Raspberry Pi Pico. The easiest way to do this is by using an IDE like [Thonny](https://thonny.org/), which has a simple interface for managing files on a MicroPython device.
 
 ## User Guide
 
@@ -100,15 +100,10 @@ The device is controlled by a MicroPython script (`StylophoneSoftware.py`) runni
 ## Future Improvements
 
 *   **Enhanced Sound Engine:**
-    *   Implement additional waveforms (sine, triangle, sawtooth) for a wider range of timbres.
     *   Add a vibrato effect using a Low-Frequency Oscillator (LFO).
-    *   Introduce an ADSR (Attack, Decay, Sustain, Release) envelope to shape the notes' volume.
 *   **Connectivity:**
     *   Add MIDI output via USB, allowing the stylophone to function as a MIDI controller.
-*   **Advanced Features:**
-    *   Improve the recording functionality to support multiple tracks or overdubbing.
 *   **Code Refinements:**
-    *   Fix the bug where `ticks_ms` and `ticks_diff` are not imported in `StylophoneSoftware.py`.
     *   Refactor the code for better efficiency, especially the recording and display update logic.
 
 ## License
